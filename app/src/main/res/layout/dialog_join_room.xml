@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitmedium"
+        android:text="Enter Room Code"
+        android:textAlignment="center"
+        android:textColor="#191919"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/roomCodeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/outfitmedium"
+        android:hint="Code"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/joinRoomErrorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitmedium"
+        android:text=""
+        android:textColor="#CD2626" />
+
+    <Button
+        android:id="@+id/roomJoinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/outfitmedium"
+        android:text="Join" />
+</LinearLayout>

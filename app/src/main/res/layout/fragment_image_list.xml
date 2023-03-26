@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ImageListFragment">
+    <RelativeLayout
+        android:id="@+id/fiRL2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/style2" />
+
+        <ImageView
+            android:id="@+id/imageItemDelete"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/imagesItemPdf"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+        <ImageView
+            android:id="@+id/imagesItemPdf"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_baseline_picture_as_pdf_24" />
+
+        <!--    <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/animation2"
+                android:layout_alignParentEnd="true"
+         />--></RelativeLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="#333333"
+        android:layout_below="@+id/fiRL2"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addImageFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:tint="#191919"
+        android:src="@drawable/ic_baseline_add_photo_alternate_24"
+        app:backgroundTint="#FFD369"
+        app:shapeAppearance="@style/MaterialAlertDialog.MaterialComponents.Title.Icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#191919"
+        android:clipToPadding="false"
+        android:padding="7dp"
+        android:paddingBottom="80dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/row_image"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

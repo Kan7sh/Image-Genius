@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="22dp"
+    app:contentPadding="10dp"
+    app:cardBackgroundColor="#333333"
+    app:strokeWidth="@null">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+
+        <ImageView
+            android:id="@+id/thumbnailRoomIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/OffWhite"
+            android:src="@drawable/home" />
+    <RelativeLayout
+        android:layout_toEndOf="@+id/thumbnailRoomIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/roomName"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfitmedium"
+            android:text="Room Name"
+            android:textSize="19dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomName">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_people_24"
+            android:id="@+id/peopleLogo"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="7dp"
+            android:adjustViewBounds="true"
+/>
+
+            <TextView
+                android:id="@+id/peopleNumberTv"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toEndOf="@id/peopleLogo"
+                android:fontFamily="@font/outfitmedium"
+                android:text="0" />
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding = "5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/more"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

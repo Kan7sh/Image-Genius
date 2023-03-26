@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MainProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/lightblack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/Gray</item>
+        <!-- Customize your theme here. -->
+        <item name="android:popupBackground">@color/lightblack</item>
+        <item name="alertDialogStyle">@color/lightblack</item>
+        <item name="alertDialogTheme">@color/lightblack</item>
+        <item name="colorBackgroundFloating">@color/lightblack</item>
+        <item name="backgroundTint">@color/lightblack</item>
+        <item name="popupMenuBackground">@color/lightblack</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="MyPopupMenuStyle" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#333333</item>
+    </style>
+</resources>

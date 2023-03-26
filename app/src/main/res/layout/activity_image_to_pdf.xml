@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".com.main.mainproject.ImageToPDF">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationMenu" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationMenu"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:backgroundTint="#333333"
+        app:itemTextColor="#FFD369"
+        app:itemIconSize="22dp"
+        app:itemRippleColor="@null"
+        app:fontFamily="@font/outfitbold"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemPaddingBottom="8dp"
+        app:itemPaddingTop="8dp"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/menu_bottom_nav" />
+
+</RelativeLayout>

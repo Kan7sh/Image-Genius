@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Image Genius</string>
+    <string name="context"> Context</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="HomeDesc">o	AI Image Generator
+    </string>
+
+</resources>

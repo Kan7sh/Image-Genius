@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    android:gravity="center_horizontal|fill_horizontal"
+    android:visibility="visible"
+    tools:context=".com.main.mainproject.Home">
+
+
+    <!--    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="375dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="25dp"
+        app:backgroundTint="#393E46"
+        app:background="#393E46"
+        app:cardBackgroundColor="#393E46"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416">
+
+
+
+
+&lt;!&ndash;        &ndash;&gt;
+
+
+
+&lt;!&ndash;        >&ndash;&gt;
+
+
+
+&lt;!&ndash;        &ndash;&gt;
+
+
+&lt;!&ndash;       &ndash;&gt;
+
+
+    </androidx.cardview.widget.CardView>-->
+
+
+    <!--    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />-->
+
+
+    <Button
+        android:id="@+id/logoHomeButton"
+        android:layout_width="282dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|center|top|end"
+        android:background="@drawable/button_style"
+        android:backgroundTint="#333333"
+        android:fontFamily="@font/hammersmith_one"
+        android:paddingTop="18dp"
+        android:paddingBottom="14dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarTrackHorizontal="@null"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoHomeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="@+id/logoHomeButton"
+        app:layout_constraintTop_toTopOf="@+id/logoHomeButton"
+        app:layout_constraintVertical_bias="0.433"
+        app:srcCompat="@drawable/logoai" />
+
+
+    <Button
+        android:id="@+id/imageToPDFHomeButton"
+        android:layout_width="282dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|top|end"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="#333333"
+        android:fontFamily="@font/hammersmith_one"
+        android:paddingTop="18dp"
+        android:paddingBottom="14dp"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoHomeButton"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintTop_toTopOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/logopdf" />
+
+    <Button
+        android:id="@+id/pdfRoomHomeButton"
+        android:layout_width="282dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|top|end"
+        android:background="@drawable/button_style"
+        android:backgroundTint="#333333"
+        android:fontFamily="@font/hammersmith_one"
+        android:paddingTop="18dp"
+        android:paddingBottom="14dp"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:cornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintVertical_bias="0.07"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintTop_toTopOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintVertical_bias="0.433"
+        app:srcCompat="@drawable/logoshare" />
+
+    <Button
+        android:id="@+id/notesTakerBtn"
+        android:layout_width="282dp"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom|top|end"
+        android:background="@drawable/button_style"
+        android:backgroundTint="#333333"
+        android:paddingTop="18dp"
+        android:paddingBottom="14dp"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintVertical_bias="0.157"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notesTakerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="@+id/notesTakerBtn"
+        app:layout_constraintTop_toTopOf="@+id/notesTakerBtn"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/logonote" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gifImageView"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/style2" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#FED269"
+        android:fontFamily="@font/outfitmedium"
+        android:text="SIGN OUT"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:cornerRadius="40dp"
+        app:iconSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesTakerBtn"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/status_bar_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="127dp"
+        android:background="#333333"
+        app:layout_constraintBottom_toTopOf="@+id/logoHomeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitsemibold"
+        android:text="TOOLS"
+        android:textColor="#D3B05A"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitbold"
+        android:text="LOGO GENERATOR"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoHomeButton"
+        app:layout_constraintEnd_toEndOf="@+id/logoHomeButton"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="@+id/logoHomeButton"
+        app:layout_constraintTop_toTopOf="@+id/logoHomeButton"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#333333"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/outfitregular"
+        android:text="Generate any image using the powerfull AI"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoHomeButton"
+        app:layout_constraintEnd_toEndOf="@+id/logoHomeButton"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/logoHomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitbold"
+        android:text="IMAGE TO PDF"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintTop_toTopOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/outfitregular"
+        android:text="Easy and efficient way to make PDFs from images"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/imageToPDFHomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitbold"
+        android:text="PDF ROOM"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintEnd_toEndOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintTop_toTopOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/outfitregular"
+        android:text="Share your PDFs and other documents with others"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintEnd_toEndOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/pdfRoomHomeButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfitbold"
+        android:text="TAKES NOTES"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/notesTakerBtn"
+        app:layout_constraintEnd_toEndOf="@+id/notesTakerBtn"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="@+id/notesTakerBtn"
+        app:layout_constraintTop_toTopOf="@+id/notesTakerBtn"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/outfitregular"
+        android:text="Create and organize notes with speech to text feature"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/notesTakerBtn"
+        app:layout_constraintEnd_toEndOf="@+id/notesTakerBtn"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/notesTakerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.078" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

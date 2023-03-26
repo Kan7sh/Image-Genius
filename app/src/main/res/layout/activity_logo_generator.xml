@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".LogoGenerator">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gifImageView"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/style2" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/status_bar_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--<com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#DD6464"
+        android:backgroundTint="#E43030"
+        android:hint="Context"
+        app:boxBackgroundColor="#8F7777"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:hintAnimationEnabled="true" />-->
+
+
+    <EditText
+        android:id="@+id/logoDescription"
+        android:singleLine="true"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners_edit_text"
+        android:backgroundTint="#EEEEEE"
+        app:backgroundTint="@null"
+        android:drawableLeft="@drawable/ic_baseline_image_search_24"
+        android:drawablePadding="10dp"
+        android:padding="14dp"
+        android:shadowColor="#CC2222"
+        android:textColor="#595757"
+        android:textColorHint="#595757"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/image_view_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoDescription"
+        app:layout_constraintVertical_bias="0.028"
+        tools:srcCompat="@tools:sample/avatars">
+
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/loadingImagePb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/logoImage"
+        app:layout_constraintEnd_toEndOf="@+id/logoImage"
+        app:layout_constraintStart_toStartOf="@+id/logoImage"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
+
+    <Button
+        android:id="@+id/generateLogo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:backgroundTint="#FFD369"
+        android:fontFamily="@font/outfitmedium"
+        android:text="GENERATE LOGO"
+        android:textColor="#1E2022"
+        android:textSize="12sp"
+        app:cornerRadius="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/downloadLogo"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+
+        android:id="@+id/downloadLogo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#FFD369"
+        android:fontFamily="@font/outfitmedium"
+        android:text="DOWNLOAD"
+        android:textColor="#1E2022"
+        android:textSize="12sp"
+        app:cornerRadius="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example - red and yellow color logo for bakery shop"
+        android:textColor="#FED269"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/logoImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoDescription"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#333333"
+        app:layout_constraintBottom_toTopOf="@+id/logoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/clearBtn"
+        app:tint="#191919"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/ic_baseline_clear_24"
+        app:background="@null"
+        app:backgroundTint="#333333"
+        app:fabCustomSize="40dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/logoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logoDescription"
+        app:layout_constraintTop_toTopOf="@+id/logoDescription"
+        app:maxImageSize="18dp"
+        app:rippleColor="#4d4d4d"
+        app:shapeAppearance="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

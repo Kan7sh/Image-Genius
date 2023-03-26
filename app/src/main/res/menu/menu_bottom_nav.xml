@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/bottomMenuImages"
+        android:title="IMAGES"
+        android:icon="@drawable/image"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/bottomMenuPDF"
+        android:title="PDF"
+        android:icon="@drawable/pdf"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

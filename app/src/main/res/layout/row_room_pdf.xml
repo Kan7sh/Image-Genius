@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="22dp"
+    app:contentPadding="10dp"
+    app:cardBackgroundColor="#333333"
+    app:strokeWidth="@null"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/cardViewDoc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <ImageView
+            android:id="@+id/thumbnailIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pdfgray"/>
+        <RelativeLayout
+            android:layout_toEndOf="@+id/thumbnailIv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/nameIv"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfitmedium"
+                android:text="PDF Name"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/uploderNameTv"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameIv"
+                android:fontFamily="@font/outfitmedium"
+                android:text="By Kanish"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sizeIv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uploderNameTv"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/outfitmedium"
+                android:text="0 bytes" />
+
+            <TextView
+                android:id="@+id/dateIv"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sizeIv"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/uploderNameTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/outfitmedium"
+                android:text="dd/MM/yyyy" />
+
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/morebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding = "5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/more"/>
+        <ImageView
+            android:id="@+id/downloadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_download_24"
+            android:padding="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/morebtn"/>
+            />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

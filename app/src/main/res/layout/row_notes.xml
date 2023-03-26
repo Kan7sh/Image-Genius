@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="22dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#333333"
+    app:contentPadding="10dp"
+    app:strokeWidth="@null">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/notesTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfitbold"
+            android:paddingLeft="17dp"
+            android:paddingTop="8dp"
+            android:text="Title"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/notesDescriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notesTitleTv"
+            android:fontFamily="@font/outfitmedium"
+            android:paddingLeft="17dp"
+            android:text="description"
+            android:textColor="#EEEEEE"
+            android:layout_marginTop="3dp"
+            android:textSize="13dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more"
+            android:id="@+id/moreNotesOptionBtn"
+            android:layout_alignParentEnd="true"
+            android:padding="12dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

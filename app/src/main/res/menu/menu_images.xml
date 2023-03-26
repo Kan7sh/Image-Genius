@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/imageItemDelete"
+    android:title="Delete"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_baseline_delete_24"/>
+
+    <item
+        android:id="@+id/imagesItemPdf"
+        android:title="PDF"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_picture_as_pdf_24"/>
+</menu>

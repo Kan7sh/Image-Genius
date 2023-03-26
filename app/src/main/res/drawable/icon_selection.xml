@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:drawable="@drawable/ic_baseline_image_24"
+    android:state_checkable="true"/>
+    <item
+        android:drawable="@drawable/pdfgray"
+        android:state_checkable="false"/>
+</selector>
